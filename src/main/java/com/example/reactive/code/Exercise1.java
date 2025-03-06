@@ -39,5 +39,8 @@ public class Exercise1 {
        StreamSources.userStream().filter(user -> StreamSources.intNumbersStream().collect(Collectors.toSet()).contains(user.getId()))
        .map(User::getFirstName)
        .forEach(System.out::println);
+
+		IntStream.rangeClosed(0, 4).forEach(System.out::println);
+
 	}
 }
